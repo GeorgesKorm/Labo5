@@ -4,24 +4,22 @@
     padding: 0px;
 }
 
-div {
-    border: 1px solid red;
-}
+
 
 .main {
     margin: auto;
-    max-width: 1500px;
+    max-width: 1200px;
     min-width: 500px;
 }
 
-.header{
+.header {
     position: fixed;
     font-size: 3em;
     text-align: center;
     height: 65px;
     background-color: black;
     color: white;
-    width: calc(min(100%,1500px));
+    width: calc(min(100%, 1200px));
 }
 
 .texte {
@@ -35,8 +33,9 @@ div {
 }
 
 .boxContainer {
-    display: block;
-    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
 }
 
 .box {
@@ -45,14 +44,59 @@ div {
     font-size: 2em;
     text-align: justify;
     flex: 1;
-    
+    border: 1px solid black;
+    gap: 5;
+
 }
 
 .largeBox {
-    flex: 3;
+    flex: 2 !important;
+    background-color: white;
+    text-align: justify;
+    font-size: 2em;
 }
 
-.titreSecondaire{
+.titreSecondaire {
     color: grey;
     font-size: larger;
+}
+
+.orderFirst {
+    order: 1;
+}
+
+.orderCenter {
+    order: 2;
+}
+
+.orderLast {
+    order: 3;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .boxContainer {
+        display: block;
+    }
+    .box {
+        margin-top: 60px;
+        background-color: lightblue;
+        font-size: 2em;
+        text-align: justify;
+        flex: 1;
+        min-width: 700px;
+
+
+    }
+
+    .largeBox {
+        flex: 3 !important;
+        background-color: white;
+        text-align: justify;
+        font-size: 2em;
+        min-width: 200px;
+    }
+
 }
