@@ -9,17 +9,17 @@
 .main {
     margin: auto;
     max-width: 1200px;
-    min-width: 500px;
 }
 
 .header {
     position: fixed;
     font-size: 3em;
     text-align: center;
-    height: 65px;
+    height: 55px;
     background-color: black;
     color: white;
     width: calc(min(100%, 1200px));
+
 }
 
 .texte {
@@ -35,17 +35,16 @@
 .boxContainer {
     display: flex;
     flex-wrap: wrap;
-    gap:20px;
+    gap:10px;
 }
 
 .box {
     margin-top: 60px;
     background-color: lightblue;
-    font-size: 2em;
+    font-size: 1em;
     text-align: justify;
     flex: 1;
     border: 1px solid black;
-    gap: 5;
 
 }
 
@@ -97,6 +96,17 @@
         text-align: justify;
         font-size: 2em;
         min-width: 200px;
+    }
+
+    .header{
+        position: fixed;
+        font-size: 3em;
+        text-align: center;
+        height: 65px;
+        background-color: black;
+        color: white;
+        width: calc(min(100%, 1200px));
+        
     }
 
 }
