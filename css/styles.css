@@ -121,6 +121,10 @@
         min-width: 200px;
     }
 
+    .image{
+        width: 100%;
+    }
+
     .orderFirst {
         order: 1;
     }
