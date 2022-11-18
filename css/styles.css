@@ -8,7 +8,7 @@
 
 .main {
     margin: auto;
-    max-width: 1200px;
+    max-width: 1500px;
 }
 
 .header {
@@ -18,13 +18,14 @@
     height: 55px;
     background-color: black;
     color: white;
-    width: calc(min(100%, 1200px));
+    width: calc(min(100%, 1500px));
 
 }
 
 .texte {
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
 }
 
 .footer {
@@ -45,19 +46,39 @@
     text-align: justify;
     flex: 1;
     border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 25px;
+    padding-top: 5px;
 
 }
 
 .largeBox {
-    flex: 2 !important;
+    flex: 3 !important;
     background-color: white;
     text-align: justify;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .titreSecondaire {
     color: grey;
-    font-size: larger;
+    font-size: 1.7em;
+    padding-bottom: 5px;
+    font-weight: bolder;
+}
+
+.titrePrimaire{
+    color:black;
+    padding-bottom: 10px;
+    font-size:1.8em;
+    font-weight: bolder;
+    text-align:justify;
+    padding-left: 5px;
+}
+
+.image{
+    width: 100%;
+    height: auto;
 }
 
 .orderFirst {
