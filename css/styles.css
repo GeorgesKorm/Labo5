@@ -139,17 +139,4 @@
         margin: 20px 3px 20px 12px;
         margin-bottom: -10px;
     }
-
-    .orderFirst {
-        order: 1;
-    }
-    
-    .orderCenter {
-        order: 2;
-    }
-    
-    .orderLast {
-        order: 3;
-    }
-
 }
