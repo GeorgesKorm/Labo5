@@ -38,9 +38,9 @@
 .footer {
     position: fixed;
     bottom: 0px;
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: center;
-    height: 20px;
+    height: 30px;
     background-color: black;
     color: white;
     width: calc(min(100%, 1500px));
@@ -51,6 +51,7 @@
     display: flex;
     flex-wrap: wrap;
     gap:10px;
+    margin-bottom: 75px;
 }
 
 .box {
@@ -109,19 +110,19 @@
 
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
 
     .boxContainer {
         display: flex;
         flex-wrap: wrap;
         flex-direction:column;
+        margin-bottom: 25px;
     }
     .box {
         margin-top: 60px;
         background-color: rgb(178,197,221);
         font-size: 1.15em;
         text-align: justify;
-
     }
 
     .largeBox {
