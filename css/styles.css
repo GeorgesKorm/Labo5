@@ -6,7 +6,6 @@
 }
 
 
-
 .main {
     margin: auto;
     max-width: 1500px;
@@ -17,23 +16,35 @@
     top:0%;
     font-size: 3em;
     text-align: center;
-    height: 55px;
+    height: 60px;
     background-color: black;
     color: white;
     width: calc(min(100%, 1500px));
-    top: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 
+
+}
+
+.headerBuffer{
+    height: 10px;
 }
 
 .texte {
     text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
     padding-top: 20px;
 }
 
 .footer {
+    position: fixed;
+    bottom: 0px;
+    font-size: 1em;
     text-align: center;
+    height: 20px;
+    background-color: black;
     color: white;
+    width: calc(min(100%, 1500px));
+
 }
 
 .boxContainer {
@@ -44,8 +55,8 @@
 
 .box {
     margin-top: 60px;
-    background-color: lightblue;
-    font-size: 1em;
+    background-color: rgb(178,197,221);
+    font-size: 1.2em;
     text-align: justify;
     flex: 1;
     border: 1px solid black;
@@ -57,7 +68,7 @@
 }
 
 .largeBox {
-    flex: 3 !important;
+    flex: 2 !important;
     background-color: white;
     text-align: justify;
     font-size: 1.5em;
@@ -98,7 +109,7 @@
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
 
     .boxContainer {
         display: flex;
@@ -107,8 +118,8 @@
     }
     .box {
         margin-top: 60px;
-        background-color: lightblue;
-        font-size: 2em;
+        background-color: rgb(178,197,221);
+        font-size: 1.15em;
         text-align: justify;
 
     }
@@ -117,12 +128,15 @@
         flex: 2 !important;
         background-color: white;
         text-align: justify;
-        font-size: 2em;
-        min-width: 200px;
+        font-size: 1.5em;
     }
 
     .image{
-        width: 100%;
+        width: 50%;
+        float:right;
+        /* padding: 20px 20px 25px 20px; */
+        margin: 20px 3px 20px 12px;
+        margin-bottom: -10px;
     }
 
     .orderFirst {
